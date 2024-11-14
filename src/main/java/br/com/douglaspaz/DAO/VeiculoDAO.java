@@ -20,7 +20,7 @@ public class VeiculoDAO {
     
 
     // Método para cadastrar um veículo
-    public void cadastrar(Veiculo veiculo) throws SQLException {
+    public void cadastrar(Veiculo veiculo){
         String sql = "INSERT INTO veiculo (placa, modelo, ano, tipo, cliente_id) VALUES (?,?,?,?,?)";
         Connection connection = conn.getConnection();
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
@@ -30,7 +30,10 @@ public class VeiculoDAO {
             stmt.setString(4, veiculo.getTipo());
             stmt.setInt(5, veiculo.getClienteId());
             stmt.executeUpdate();
-        }
+        }catch (Exception e) {
+			// TODO: handle exception
+        	e.printStackTrace();
+		}
     }
 
     // Método para listar todos os veículos
@@ -86,7 +89,7 @@ public class VeiculoDAO {
     }
 
     // Método para filtrar veículos por clienteId
-    public List<Veiculo> buscarPorCliente(int clienteId) throws SQLException {
+    public List<Veiculo> buscarPorCliente(int clienteId){
         List<Veiculo> veiculos = new ArrayList<>();
         String sql = "SELECT * FROM veiculo WHERE cliente_id = ?";
         Connection connection = conn.getConnection();
@@ -104,8 +107,14 @@ public class VeiculoDAO {
                     );
                     veiculos.add(veiculo);
                 }
-            }
-        }
+            }catch (Exception e) {
+				// TODO: handle exception
+            	e.printStackTrace();
+			}
+        }catch (Exception e) {
+			// TODO: handle exception
+        	e.printStackTrace();
+		}
         return veiculos;
     }
     

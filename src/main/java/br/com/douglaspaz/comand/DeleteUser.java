@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class DeleteUser implements Command{
 	
-	private static final String LISTAUSUARIOS = "/cliente/listaCliente.jsp";
+	private static final String LISTAUSUARIOS = "/WEB-INF/cliente/listaCliente.jsp";
 
 	
 	ClienteServico clienteServico;

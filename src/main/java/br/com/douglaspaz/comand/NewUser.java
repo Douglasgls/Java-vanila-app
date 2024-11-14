@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class NewUser implements Command {
 
-	private static final String PAGINACADASTRO = "/cliente/cadastrarCliente.jsp";
+	private static final String PAGINACADASTRO = "/WEB-INF/cliente/cadastrarCliente.jsp";
 	private static final String LISTAUSUARIOS = "http://localhost:8080/UsuarioCRUD/app?acao=ListUser";
 
 	ClienteServico clienteServico;

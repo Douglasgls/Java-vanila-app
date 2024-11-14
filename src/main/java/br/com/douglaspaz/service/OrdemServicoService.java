@@ -1,8 +1,6 @@
 package br.com.douglaspaz.service;
 
-import java.time.LocalDate;
 import java.time.Year;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 import br.com.douglaspaz.DAO.OrdemServicoDAO;

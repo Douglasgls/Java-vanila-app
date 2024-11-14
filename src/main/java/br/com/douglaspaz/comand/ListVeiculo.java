@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class ListVeiculo implements Command{
 	
-	private String pagina = "/veiculo/listaVeiculo.jsp";
+	private String pagina = "/WEB-INF/veiculo/listaVeiculo.jsp";
 	
 	private VeiculoService veiculoService;
 	

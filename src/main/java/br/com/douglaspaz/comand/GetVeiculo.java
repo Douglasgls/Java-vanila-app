@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class GetVeiculo implements Command {
 
-	private String pagina = "./veiculo/cadastrarVeiculo.jsp";
+	private String pagina = "/WEB-INF/veiculo/cadastrarVeiculo.jsp";
 	
 	private VeiculoService veiculoService;
 	private ClienteServico clienteService;

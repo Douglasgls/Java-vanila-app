@@ -109,7 +109,7 @@ public class ServicoDAO {
     }
 
     // Método para filtrar serviços por veiculoId
-    public List<Servico> buscarPorVeiculo(int veiculoId) throws SQLException {
+    public List<Servico> buscarPorVeiculo(int veiculoId){
         List<Servico> servicos = new ArrayList<>();
         String sql = "SELECT * FROM servico WHERE veiculoId = ?";
         Connection connection = conn.getConnection();
@@ -126,8 +126,14 @@ public class ServicoDAO {
                     );
                     servicos.add(servico);
                 }
-            }
-        }
+            }catch (Exception e) {
+				// TODO: handle exception
+            	e.printStackTrace();
+			}
+        }catch (Exception e) {
+			// TODO: handle exception
+        	e.printStackTrace();
+		}
         return servicos;
     }
 }

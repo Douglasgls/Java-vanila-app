@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class NewVeiculo implements Command{
 
-	private static String pagina = "/veiculo/cadastrarVeiculo.jsp";
+	private static String pagina = "/WEB-INF/veiculo/cadastrarVeiculo.jsp";
 	
 	private ClienteServico clienteServico;
 	

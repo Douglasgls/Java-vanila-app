@@ -13,7 +13,7 @@ public class VeiculoService {
         this.veiculoDAO = veiculoDAO;
     }
 
-    public void cadastrarVeiculo(Veiculo veiculo) throws SQLException {
+    public void cadastrarVeiculo(Veiculo veiculo){
         if (veiculo.getPlaca() == null || veiculo.getPlaca().isEmpty()) {
             throw new IllegalArgumentException("Placa do veículo é obrigatória.");
         }

@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class ListServico implements Command{
 	
-	private String pagina = "/servico/listaServico.jsp";
+	private String pagina = "/WEB-INF/servico/listaServico.jsp";
 	
 	private ServicoService servicoService;
 	

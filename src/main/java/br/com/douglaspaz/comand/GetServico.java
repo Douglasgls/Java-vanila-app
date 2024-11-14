@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class GetServico implements Command {
-	private String pagina = "./servico/cadastrarServico.jsp";
+	private String pagina = "/WEB-INF/servico/cadastrarServico.jsp";
 	
 	private ServicoService servicoService;
 	

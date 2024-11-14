@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class DeletePedido implements Command {
 
-	private String pagina = "/ordemServico/listaOrdemServico.jsp";
+	private String pagina = "/WEB-INF/ordemServico/listaOrdemServico.jsp";
 
 	private OrdemServicoService orderServicoService;
 	private ClienteServico clienteService;

@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 public class ListUser implements Command{
 	
-	String paginaSucesso = "/cliente/listaCliente.jsp";
+	String paginaSucesso = "/WEB-INF/cliente/listaCliente.jsp";
 	
 	ClienteServico clienteServico;
 	
